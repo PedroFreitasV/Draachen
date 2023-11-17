@@ -33,6 +33,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <header class="fixed-top">
@@ -58,19 +59,19 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="square-div">
-                            <h1>Bem vindo(a) à DRAACHEN</h1>
-                            <img src="./images/dragon-remove-bg.png" class="img-fluid dragon rotate_02" alt="Dragão">
+                            <h1 id="dragon">Bem vindo(a) à DRAACHEN</h1>
+                            <img id="dragon" src="./images/dragon-remove-bg.png" class="img-fluid dragon rotate_02" alt="Dragão">
                         </div>
                     </div>
                     <div class="col-md-6 d-md-block d-none ">
-                        <img src="./images/dragão-dourado.png" alt="dragão dourado" class="img-fluid ms-5">
+                        <img id="dragon" src="./images/dragão-dourado.png" alt="dragão dourado" class="img-fluid ms-5">
                     </div>
                 </div>
             </div>
         </section>
         <section id="sct-2">
             <div class="container">
-                <div class="row">
+                <div class="row" id="row">
                     <div class="col-12 center">
                         <div class="row center">
                             <div class="col-12 center">
@@ -84,8 +85,8 @@
                                                 <div class="carousel-item active">
                                                     <div class="row all-cardas">
                                                         <div class="col-4">
-                                                            <div class="cartao-gamer">
-                                                                <img src="./players/Prënz.png" class="img-fluid img-gamer" alt="Logo do Prenz">
+                                                            <div class="cartao-gamer card-gamer">
+                                                                    <img src="./players/Prënz.png" class="img-fluid img-gamer" alt="Logo do Prenz">
                                                                 <div class="content">
                                                                     <h2>Prënz</h2>
                                                                     <div class="redes">
@@ -169,22 +170,22 @@
         <section id="sct-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" id="vil">
                         <h2>Nossa história</h2>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="caixa-dourada">
-                            <p class="lead pt-4 history">
+                            <p class="lead pt-4 history" id="vil">
                                 Os dragões dourados surgiram de uma ambiciosa ideia de jogadores diferenciados com sonhos, objetivos, e metas 
                                 distintas, mas com uma meta em comum, conquistar grandes glorias no cenário competitivo de MLBB, o nome 
                                 "DRAACHEN" vem do idioma Luxemburguês, que traduzindo para o português significa "dragão".
                             </p>
-                            <p class="lead history">
+                            <p class="lead history" id="vil">
                                 No primeiro ano de existência o time já possui grandes metas, e pretende chegar muito longe no cenário mundial.
                             </p>
                         </div>
                     </div>
-                    <div class=" col-md-6">
+                    <div class=" col-md-6" id="vil">
                         <img src="./images/dragao-removebg-preview.png" class="img-fluid dragon-img" alt="Dragão dourado">
                     </div>
                 </div>
@@ -193,22 +194,22 @@
         <section id="sct-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" id="history">
                         <h2>Nossas metas e objetivos</h2>
                     </div>
                     <div class="col-12 col-md-6">
-                        <p class="lead history pt-3">
+                        <p class="lead history pt-3" id="history">
                             Certamente que nossa principal meta é chegar à MPL em 2024 e chegar para ganhar, conquistar a liga Latam e o 
                             mundial, nosso principal objetivo certamente é ganhar tudo que disputarmos, e quando nossos objetivos forem 
                             conquistados, certamente dobraremos para chegar cada vez mais longe.
                         </p>
-                        <p class="lead history pt-2">
+                        <p class="lead history pt-2" id="history">
                             Certamente como pessoas nossa meta é nos tornarmos pessoas melhores a cada dia, como profissionais não somos 
                             diferentes, buscamos melhorar mais e mais a cada dia para que nossos sonhos se tornem realidade.
                         </p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="./images/black-dragon-removebg-preview.png" alt="Dragão escuro" class="img-fluid">
+                        <img src="./images/black-dragon-removebg-preview.png" alt="Dragão escuro" class="img-fluid" id="history">
                     </div>
                 </div>
             </div>
@@ -216,13 +217,13 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-3 pt-2">
+                    <div class="col-5 col-md-3 pt-2">
                         <h4>Bem-vindo(a)</h4>
                         <ul class="navbar-nav">
                             <li><a href="#sct-1">Bem vindo(a)</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-3 pt-2">
+                    <div class="col-5 col-md-3 pt-2">
                         <h4>Sobre nós</h4>
                         <ul class="navbar-nav">
                             <li><a href="#sct-4">Nossos objetivos</a></li>
@@ -249,7 +250,9 @@
 
 
         <script src="js/index.js"></script>
+        <script src="./js/app.js"></script>
         <script src="Bootstrap-5/Bootstrap5/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
         <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
